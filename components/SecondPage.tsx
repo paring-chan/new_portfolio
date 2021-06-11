@@ -9,7 +9,7 @@ export default function SecondPage() {
             <div className='flex justify-center pt-10'>
                 <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
                     {getPhotos.map((x, y) => (
-                        <Link href={`./illust/${getPhonesStrings[y]}`}>
+                        <Link href={`./illust/${getPhonesStrings[y]}`} key={y}>
                             <a href={`./illust/${getPhonesStrings[y]}`} key={y} className='transition duration-500 filter hover:opacity-50' id='illust'>
                                 <img src={x} alt='' height={300} width={300} className='rounded-2xl'/>
                             </a>
