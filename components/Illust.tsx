@@ -10,7 +10,7 @@ export default function Illust({ img, video, title, description }) {
                 </a>
             </Link>
             <div className='w-screen h-screen absolute bg-black z-20 opacity-50' style={{ backdropFilter: 'blur(32px)' }}/>
-            <div className='flex pt-24 z-50 justify-center'>
+            <div className='flex pt-24 z-50 items-center md:items-start md:flex-row flex-col'>
                 <img src={img} alt='' height={300} width={300} />
                 <div className='block p-10'>
                     <h1 className='text-4xl font-bold'>{title}</h1>
