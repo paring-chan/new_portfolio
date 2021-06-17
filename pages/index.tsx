@@ -1,9 +1,11 @@
-import MainPage from "@components/MainPage";
-import SecondPage from "@components/SecondPage";
+import MainPage from "@page/MainPage";
+import SecondPage from "@page/SecondPage";
 import Navigation from "@components/Navigation";
 import { NextSeo } from "next-seo";
+import { useState } from "react";
 
 export default function Home() {
+
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <NextSeo

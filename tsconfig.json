@@ -20,7 +20,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@page/*": ["page/*"]
     }
   },
   "include": [
