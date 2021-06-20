@@ -2,10 +2,13 @@ import MainPage from "@page/MainPage";
 import SecondPage from "@page/SecondPage";
 import Navigation from "@components/Navigation";
 import { NextSeo } from "next-seo";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 
 export default function Home() {
-
+    const [ isDarkMode, setIsDarkMode ] = useState(false);
+    useEffect(() => {
+        setIsDarkMode(localStorage.getItem('theme') !== null)
+    })
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <NextSeo
