@@ -3,6 +3,7 @@ import SecondPage from "@page/SecondPage";
 import Navigation from "@components/Navigation";
 import { NextSeo } from "next-seo";
 import {useEffect, useState} from "react";
+import Footer from "@components/Footer";
 
 export default function Home() {
     const [ isDarkMode, setIsDarkMode ] = useState(false);
@@ -30,6 +31,8 @@ export default function Home() {
             <Navigation />
             <MainPage />
             <SecondPage />
+            <div className='flex-grow md:mb-24 mb-0' />
+            <Footer />
         </div>
     )
 }

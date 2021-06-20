@@ -8,8 +8,6 @@ function MyApp({ Component, pageProps }) {
   return (
       <>
         <Component {...pageProps} />
-        <div className='flex-grow md:mb-24 mb-0' />
-        <Footer />
       </>
   )
 }
