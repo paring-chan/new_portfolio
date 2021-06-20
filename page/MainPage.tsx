@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MainPage() {
     return (
         <>
-            <div className='font-light pt-96'>
+            <div className='font-light sm:pt-80 pt-60'>
                 <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-500 text-7xl font-bold'>STORM</span>
                 <h1 className='py-5 text-2xl font-light'>I'm Illustrator & Developer</h1>
                 <div className='flex justify-center gap-5'>
@@ -20,7 +20,7 @@ export default function MainPage() {
                     </Link>
                 </div>
             </div>
-            <div className='sm:pt-96 pt-56 pb-28'>
+            <div className='sm:pt-80 pt-56 pb-28'>
                 <FontAwesomeIcon icon={['fas', 'chevron-down']} color='white' className='animate-bounce' />
             </div>
         </>
