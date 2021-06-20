@@ -14,7 +14,7 @@ export default function MainPage() {
                         </a>
                     </Link>
                     <Link href='mailto:storm@stormdev.club'>
-                        <a href='mailto:storm@stormdev.club'>
+                        <a href='mailto:me@stormdev.club'>
                             <FontAwesomeIcon icon={['fas', 'envelope']} />
                         </a>
                     </Link>
