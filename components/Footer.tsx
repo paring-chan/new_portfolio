@@ -8,6 +8,7 @@ const Container = styled.div`
   justify-content: space-between;
   ${tw`md:px-24 py-10 px-4`}
   flex-direction: column;
+  color: white;
 `
 
 const Content = styled.div`
@@ -17,9 +18,13 @@ const Content = styled.div`
 export default function Footer() {
     return (
         <Container>
-            <Content className='flex justify-center' style={{ alignItems: 'center' }}>
+            <Content className='flex justify-around sm:gap-96 gap-5' style={{ alignItems: 'center' }}>
+                <div />
                 <div>
                     &copy; {new Date().getFullYear()} STORM All rights reserved.
+                </div>
+                <div>
+                    사업자번호 : 799-60-00477
                 </div>
             </Content>
         </Container>
