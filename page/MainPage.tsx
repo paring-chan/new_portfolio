@@ -18,6 +18,11 @@ export default function MainPage() {
                             <FontAwesomeIcon icon={['fas', 'envelope']} />
                         </a>
                     </Link>
+                    <Link href='https://github.com/UniqueDevStorm'>
+                        <a href='https://github.com/UniqueDevStorm' target='_blank'>
+                            <FontAwesomeIcon icon={['fab', 'github']} />
+                        </a>
+                    </Link>
                 </div>
             </div>
             <div className='sm:pt-80 pt-56 pb-28'>
