@@ -5,7 +5,7 @@ export default function MainPage() {
     return (
         <>
             <div className='font-light sm:pt-80 pt-60'>
-                <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-500 text-7xl font-bold'>STORM</span>
+                <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-500 text-7xl font-bold'>송찬우</span>
                 <h1 className='py-5 text-2xl font-light'>I'm Illustrator & Developer</h1>
                 <div className='flex justify-center gap-5'>
                     <Link href='tel:01054987416'>
