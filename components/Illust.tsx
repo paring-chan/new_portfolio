@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Illust({ img, video, title, description }) {
     return (
         <div className='block px-1 flex items-center flex-col'>
-            <video src={video} className='w-screen fixed z-10' autoPlay loop />
+            <video src={video} className='w-screen fixed z-10' autoPlay loop playsInline />
             <Link href="/">
                 <a href='/' className='absolute left-8 top-8 z-50'>
                     홈으로
