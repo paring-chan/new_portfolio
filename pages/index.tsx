@@ -2,14 +2,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/Home.module.scss'
 import profile from '../assets/img/profile.png'
-import Image from 'next/image'
 
 export default function Home() {
     return (
         <div>
             <div className={styles.hero}>
                 <div className={styles.content}>
-                    <Image
+                    <img
                         src={profile.src}
                         width={200}
                         height={200}
