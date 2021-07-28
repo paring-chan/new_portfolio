@@ -8,6 +8,7 @@ export default function Home() {
     return (
         <ReactFullpage
             licenseKey="7A6BD9E1-8D334350-80A4BC34-64E1097D"
+            navigation
             render={({ fullpageApi }) => (
                 <div>
                     <div className="section">
@@ -58,7 +59,19 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="section"></div>
+                    <div className="section">
+                        <div style={{ position: 'relative', height: '100%' }}>
+                            <h1
+                                style={{
+                                    position: 'absolute',
+                                    left: 30,
+                                    top: 30,
+                                }}
+                            >
+                                I'm Illustrator!
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             )}
         />
