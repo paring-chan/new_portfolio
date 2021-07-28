@@ -16,7 +16,7 @@ export default function Home() {
                         alt="profile"
                     />
                     <h1>STORM</h1>
-                    <h2>I'm Illustrator & Developer</h2>
+                    <h2>I&apos;m Illustrator & Developer</h2>
                     <div className={styles.links}>
                         <a href="tel:01054987416">
                             <FontAwesomeIcon icon={['fas', 'phone']} />
@@ -27,6 +27,7 @@ export default function Home() {
                         <a
                             target="_blank"
                             href="https://github.com/uniquedevstorm"
+                            rel="noreferrer"
                         >
                             <FontAwesomeIcon icon={['fab', 'github']} />
                         </a>
