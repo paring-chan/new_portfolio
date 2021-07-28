@@ -1,33 +1,22 @@
 {
-  "name": "new_portfolio",
+  "name": "storm_portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@zeit/next-css": "^1.0.1",
-    "fs": "^0.0.1-security",
-    "next": "10.2.3",
-    "next-seo": "^4.24.0",
-    "next-videos": "^1.4.0",
+    "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "styled-components": "^5.3.0",
-    "twin.macro": "^2.5.0"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.8",
-    "autoprefixer": "^10.2.6",
-    "next-images": "^1.7.0",
-    "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.4",
-    "typescript": "^4.3.2"
+    "@types/react": "17.0.15",
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "4.3.5"
   }
 }
