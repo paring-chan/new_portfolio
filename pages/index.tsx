@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/Home.module.scss'
 import profile from '../assets/img/profile.png'
 import ReactFullpage from '@fullpage/react-fullpage'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Illustrations from '@assets/illust'
+import Illustration from '../components/Illustration'
 
 export default function Home() {
     return (
         <ReactFullpage
             licenseKey="7A6BD9E1-8D334350-80A4BC34-64E1097D"
-            navigation
             render={({ fullpageApi }) => (
                 <div>
                     <div className="section">
@@ -66,10 +68,22 @@ export default function Home() {
                                     position: 'absolute',
                                     left: 30,
                                     top: 30,
+                                    zIndex: 99999,
                                 }}
                             >
                                 I'm Illustrator!
                             </h1>
+                            <Swiper
+                                style={{ height: '100%' }}
+                                pagination
+                                navigation
+                            >
+                                {Illustrations.map((x, i) => (
+                                    <SwiperSlide key={i}>
+                                        <Illustration i={x} />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                     </div>
                 </div>

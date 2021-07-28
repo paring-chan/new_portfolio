@@ -26,3 +26,7 @@ a {
 * {
     box-sizing: border-box;
 }
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+}
