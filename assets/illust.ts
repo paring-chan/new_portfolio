@@ -13,7 +13,7 @@ import FifthVid from '@assets/Illust/Videos/Fifth.mp4'
 import SixthVid from '@assets/Illust/Videos/Sixth.mp4'
 import SeventhVid from '@assets/Illust/Videos/Seventh.mp4'
 
-export default [
+const Illustrations = [
     {
         title: 'Space ball',
         description: '우주의 풍경을 구슬로 그려봤습니다.',
@@ -57,3 +57,5 @@ export default [
         vid: SeventhVid,
     },
 ]
+
+export default Illustrations
