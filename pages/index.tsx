@@ -23,7 +23,9 @@ export default function Home() {
                                     alt="profile"
                                 />
                                 <h1>STORM</h1>
-                                <h2>I&apos;m Illustrator & Developer</h2>
+                                <h2 style={{ textAlign: 'center' }}>
+                                    I&apos;m Illustrator & Developer
+                                </h2>
                                 <div className={styles.links}>
                                     <a href="tel:01054987416">
                                         <FontAwesomeIcon
@@ -84,6 +86,20 @@ export default function Home() {
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
+                        </div>
+                    </div>
+                    <div className="section fp-auto-height">
+                        <div className={styles.footer}>
+                            <div>2021 &copy; STORM</div>
+                            <div>
+                                Designed & Developed by{' '}
+                                <a
+                                    href="https://github.com/pikokr"
+                                    target="_blank"
+                                >
+                                    pikokr
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

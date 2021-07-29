@@ -54,6 +54,12 @@
     }
 }
 
+.footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
 @keyframes sdb07 {
     0% {opacity: 0;}
     50% {opacity: 1;}
