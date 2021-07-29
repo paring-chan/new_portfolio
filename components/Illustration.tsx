@@ -14,6 +14,8 @@ const Illustration: React.FC<{
                 display: 'flex',
                 justifyContent: 'center',
                 position: 'relative',
+                alignItems: 'center',
+                height: '100%',
             }}
         >
             <video
