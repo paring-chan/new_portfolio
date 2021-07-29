@@ -91,6 +91,7 @@ export default function Home() {
                     <div className="section fp-auto-height">
                         <div className={styles.footer}>
                             <div>2021 &copy; STORM</div>
+                            <div>사업자등록번호: 799-60-00477</div>
                             <div>
                                 Designed & Developed by{' '}
                                 <a
