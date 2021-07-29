@@ -51,6 +51,20 @@ const Illustration: React.FC<{
                     zIndex: 101,
                 }}
             />
+            <div
+                style={{
+                    zIndex: 102,
+                    position: 'absolute',
+                    left: 0,
+                    bottom: 0,
+                    width: '100vw',
+                    padding: 30,
+                    background: 'rgba(0,0,0,0.5)',
+                }}
+            >
+                <h1>{i.title}</h1>
+                <div>{i.description}</div>
+            </div>
         </div>
     )
 }
