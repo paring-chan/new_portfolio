@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from '../styles/components/ProjectSlide.module.scss'
+import Button from './Button'
 
 type ProjectSlideProps = {
     title: string
     description: string
     image: string
     bg?: string
+    buttons?: TButton[]
+}
+
+type TButton = {
+    label: string
+    link: string
 }
 
 const ProjectSlide: React.FC<ProjectSlideProps> = ({
@@ -13,6 +20,7 @@ const ProjectSlide: React.FC<ProjectSlideProps> = ({
     image,
     title,
     description,
+    buttons,
 }) => {
     return (
         <div
@@ -37,10 +45,27 @@ const ProjectSlide: React.FC<ProjectSlideProps> = ({
                 }}
             />
             <div className={styles.content} style={{ zIndex: 1000 }}>
-                <img src={image} width={300} alt={title} />
+                <img
+                    style={{ borderRadius: '50%' }}
+                    src={image}
+                    width={300}
+                    alt={title}
+                />
                 <div>
                     <h1>{title}</h1>
-                    {description}
+                    <div>{description}</div>
+                    {buttons && (
+                        <div style={{ marginTop: 5 }}>
+                            {buttons.map((x, i) => (
+                                <Button
+                                    text={x.label}
+                                    target="_blank"
+                                    href={x.link}
+                                    key={i}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -9,9 +9,12 @@
 
     .content {
         display: flex;
-        gap: 30px;
+        flex-direction: column;
+        gap: 10px;
         & > div {
-            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding-bottom: 10px;
         }
     }

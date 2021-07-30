@@ -25,8 +25,14 @@ const Projects = () => {
                     <SwiperSlide>
                         <ProjectSlide
                             title="FreeAI"
-                            description="ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㄹㅇㅁㄴㅇㄹㅇㅁㄴㄻㄴㄻㅇ"
+                            description="여러 기능을 한봇에, 다기능 챗봇"
                             image={FreeAIProfile.src}
+                            buttons={[
+                                {
+                                    label: '초대하기',
+                                    link: 'https://discord.com/oauth2/authorize?client_id=695899835953578025&permissions=8&scope=bot',
+                                },
+                            ]}
                         />
                     </SwiperSlide>
                 </Swiper>
