@@ -7,7 +7,8 @@ const Illustration: React.FC<{
         img: any
         vid: any
     }
-}> = ({ i }) => {
+    index: number
+}> = ({ i, index }) => {
     return (
         <div
             style={{
@@ -20,6 +21,7 @@ const Illustration: React.FC<{
         >
             <video
                 src={i.vid}
+                id={`illustrations_${index}`}
                 autoPlay
                 loop
                 style={{

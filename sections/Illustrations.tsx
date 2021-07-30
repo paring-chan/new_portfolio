@@ -17,10 +17,21 @@ const IllustrationSection = () => {
                 >
                     I&apos;m Illustrator!
                 </h1>
-                <Swiper style={{ height: '100%' }} pagination navigation>
+                <Swiper
+                    style={{ height: '100%' }}
+                    pagination
+                    navigation
+                    onSlideChange={(slide) => {
+                        const v = document.querySelector(
+                            `video#illustrations_${slide.activeIndex}`,
+                        ) as HTMLVideoElement
+                        v.currentTime = 0
+                        v.play()
+                    }}
+                >
                     {Illustrations.map((x, i) => (
                         <SwiperSlide key={i}>
-                            <Illustration i={x} />
+                            <Illustration index={i} i={x} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
